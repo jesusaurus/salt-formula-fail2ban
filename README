@@ -1,0 +1,13 @@
+# Purpose
+
+This formula is used to install fail2ban and configure jail rules. Service-specific rules should be put in their own sub-state
+to be included by the service.
+
+# Usage
+
+This should be a very modular formula, allowing for fine-grained includes.
+
+``` myservice.sls
+include:
+  - fail2ban.myservice
+```
